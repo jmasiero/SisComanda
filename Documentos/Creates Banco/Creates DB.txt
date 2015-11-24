@@ -1,0 +1,35 @@
+CREATE TABLE [dbo].[Garcom] (
+    [Cpf]    VARCHAR (11)  NOT NULL,
+    [Nome]   VARCHAR (100) NULL,
+    [Codigo] INT           NULL,
+    PRIMARY KEY CLUSTERED ([Cpf] ASC)
+);
+
+CREATE TABLE [dbo].[ListaPedidosMesa] (
+    [IdPedido]     INT        NOT NULL,
+    [Produto_Id]   INT        NOT NULL,
+    [Mesa_Numero]  INT        IDENTITY (1, 1) NOT NULL,
+    [Qtd]          FLOAT (53) NULL,
+    [StatusPedido] INT        NULL,
+    PRIMARY KEY CLUSTERED ([IdPedido] ASC, [Produto_Id] ASC, [Mesa_Numero] ASC),
+    FOREIGN KEY ([Produto_Id]) REFERENCES [dbo].[Produto] ([Id]),
+    FOREIGN KEY ([Mesa_Numero]) REFERENCES [dbo].[Mesa] ([Numero])
+);
+
+CREATE TABLE [dbo].[Mesa] (
+    [Numero]     INT          IDENTITY (1, 1) NOT NULL,
+    [Garcom_Cpf] VARCHAR (11) NOT NULL,
+    [Ocupada]    BIT          NULL,
+    PRIMARY KEY CLUSTERED ([Numero] ASC),
+    FOREIGN KEY ([Garcom_Cpf]) REFERENCES [dbo].[Garcom] ([Cpf])
+);
+
+
+CREATE TABLE [dbo].[Produto] (
+    [Id]    INT             IDENTITY (1, 1) NOT NULL,
+    [Preco] DECIMAL (10, 2) NULL,
+    [Nome]  VARCHAR (100)   NULL,
+    [Tipo]  SMALLINT        NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
