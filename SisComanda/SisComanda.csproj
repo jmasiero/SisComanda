@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GerenciarGarcom.aspx" />
+    <Content Include="GerenciarProduto.aspx" />
+    <Content Include="IncluirGarcom.aspx" />
+    <Content Include="IncluirProduto.aspx" />
     <Content Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <Content Include="css\bootstrap-theme.css.map" />
@@ -101,6 +105,34 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciarGarcom.aspx.cs">
+      <DependentUpon>GerenciarGarcom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GerenciarGarcom.aspx.designer.cs">
+      <DependentUpon>GerenciarGarcom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciarProduto.aspx.cs">
+      <DependentUpon>GerenciarProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GerenciarProduto.aspx.designer.cs">
+      <DependentUpon>GerenciarProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncluirGarcom.aspx.cs">
+      <DependentUpon>IncluirGarcom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncluirGarcom.aspx.designer.cs">
+      <DependentUpon>IncluirGarcom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IncluirProduto.aspx.cs">
+      <DependentUpon>IncluirProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncluirProduto.aspx.designer.cs">
+      <DependentUpon>IncluirProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

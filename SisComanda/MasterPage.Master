@@ -41,10 +41,10 @@
                             data-toggle="dropdown">Gerenciar<strong class="caret"></strong></a>
                         <ul class="dropdown-menu">
                             <li><a href="">Caixa</a></li>
-                            <li><a href="">Produto</a></li>
+                            <li><a href="GerenciarProduto.aspx">Produto</a></li>
                             <li><a href="">Cozinha</a></li>
                             <li><a href="">Bar</a></li>
-                            <li><a href="">Garçom</a></li>
+                            <li><a href="GerenciarGarcom.aspx">Garçom</a></li>
                             <li><a href="">Comanda</a></li>
                         </ul>
                     </li>
