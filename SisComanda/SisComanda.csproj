@@ -146,6 +146,16 @@
   <ItemGroup>
     <Folder Include="imagens\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controle\Controle.csproj">
+      <Project>{42341628-7204-49fc-867c-56b70515945d}</Project>
+      <Name>Controle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidade\Entidade.csproj">
+      <Project>{f933e2cb-d8c6-4d12-a554-8551d6fdf40f}</Project>
+      <Name>Entidade</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

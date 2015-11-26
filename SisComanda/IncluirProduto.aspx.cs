@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controle;
+using Entidade;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +18,13 @@ namespace SisComanda
 
         protected void BtnIncluir_Click(object sender, EventArgs e)
         {
+            ProdutoControle ctl = new ProdutoControle();
 
+            Produto p = new Produto();
+            p.Nome = ;
+            p.Preco =;
+            p.Tipo =;
+            ctl.inserir(p);
         }
     }
 }
